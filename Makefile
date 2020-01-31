@@ -45,6 +45,7 @@ app:
 clean:
 	@echo " CLEAN"
 	@rm -fR $(OBJS) $(DEPS) $(TARGET)
+	@rm *.json
 
 debug: $(TARGET) app
 	@echo " Debuggin..."
