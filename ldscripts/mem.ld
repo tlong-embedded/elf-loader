@@ -7,7 +7,7 @@
  */
 MEMORY
 {
-    FFLASH (rx)        : ORIGIN = 0x00000000, LENGTH = 0x0200000  /*   2M */
+    FLASH (rx)         : ORIGIN = 0x00000000, LENGTH = 0x0200000  /*   2M */
     RAM (rwx)          : ORIGIN = 0x1FFE0000, LENGTH = 0x00A0000  /* 640K */
     DATA_FLASH (rx)    : ORIGIN = 0x40100000, LENGTH = 0x0010000  /*  64K */
     QSPI_FLASH (rx)    : ORIGIN = 0x60000000, LENGTH = 0x4000000  /*  64M, Change in QSPI section below also */
