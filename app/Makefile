@@ -31,6 +31,8 @@ app.elf: $(OBJS)
 	@$(LD) $(LDFLAGS) -o $@ $^
 	@$(STRIP) -g -o app-striped.elf $@
 	@$(SIZE) --common $@
+	cp app.elf ..
+	cp app-striped.elf ..
 
 .PHONY: clean all list
 
