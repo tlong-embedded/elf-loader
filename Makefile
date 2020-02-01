@@ -1,7 +1,7 @@
 SRC=main.c loader.c arm/fault.c
 ASRC=arm/startup_ARMCM4.S
 
-TARGET=elfloader
+TARGET=elfloader.elf
 
 CROSS=arm-none-eabi-
 CC=$(CROSS)gcc
